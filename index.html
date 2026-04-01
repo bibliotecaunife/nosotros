@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,146 +9,124 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background-color: #fff;
-        }
-
-        /* --- CABECERA COLOR FONDO VERDE OSCURO --- */
-        .main-header {
-            background-color: #0d422b; /* Verde oscuro institucional */
-            padding: 25px 5%;
-        }
-
-        .header-content {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-
-        /* Contenedor del logo con su propio fondo verde brillante */
-        .logo-container {
-            background-color: #00bc62; 
-            width: 70px;
-            height: 70px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 8px;
-        }
-
-        .logo-container img {
-            width: 80%;
-            height: auto;
-        }
-
-        .header-text h1 {
-            color: #ffffff;
-            font-size: 26px;
-            font-weight: bold;
-        }
-
-        .header-text p {
-            color: #ffffff;
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            opacity: 0.9;
-        }
-
-        /* --- SECCIÓN DEL BOTÓN DE ALERTA --- */
-        .alerta-bar {
-            background-color: #0d422b;
-            border-top: 1px solid rgba(255,255,255,0.1);
+            font-family: Arial, sans-serif;
             padding: 20px 5%;
-            text-align: center;
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
         }
 
-        .btn-alerta {
-            display: inline-block;
-            border: 1px solid #ffffff;
-            color: #ffffff;
-            padding: 12px 40px;
-            text-decoration: none;
-            font-size: 13px;
+        /* ENCABEZADO */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto 10px auto;
+        }
+
+        .universidad {
+            color: #008f4c;
+            font-size: 15px;
             font-weight: bold;
             text-transform: uppercase;
-            letter-spacing: 2px;
-            border-radius: 4px;
-            transition: 0.3s;
         }
 
-        .btn-alerta:hover {
-            background-color: #ffffff;
-            color: #0d422b;
+        .biblioteca {
+            color: #005c32;
+            font-size: 32px;
+            font-weight: 800;
         }
 
-        /* --- CUERPO DE LA PÁGINA --- */
-        .contenido-principal {
-            padding: 60px 5%;
+        .header img {
+            height: 75px;
+            width: auto;
+        }
+
+        /* LÍNEA DIVISORIA: Un punto más de grosor (2px) */
+        hr {
+            border: 0;
+            border-top: 2px solid #eee; 
             max-width: 1100px;
-            margin: 0 auto;
+            margin: 0 auto 45px auto;
         }
 
-        .mision-vision-grid {
+        /* DESCRIPCIÓN */
+        .descripcion {
+            text-align: center;
+            color: #008f4c;
+            font-style: italic;
+            font-size: 20px;
+            max-width: 900px;
+            margin: 0 auto 55px auto;
+            font-weight: 500;
+        }
+
+        /* CUADROS MISIÓN Y VISIÓN */
+        .grid-mv {
             display: flex;
             gap: 30px;
-            margin-top: 40px;
+            max-width: 1100px;
+            margin: 0 auto;
         }
 
-        .caja-info {
-            flex: 1;
+        .caja {
             background-color: #f9fdfb;
-            padding: 40px;
-            border-left: 10px solid #00bc62;
+            padding: 35px;
+            border-left: 8px solid #008f4c;
             border-radius: 5px;
+            flex: 1;
         }
 
-        .caja-info h2 {
-            color: #0d422b;
-            margin-bottom: 20px;
-            font-size: 32px;
+        .caja h2 {
+            color: #005c32;
+            font-size: 25px;
+            margin-bottom: 18px;
             text-transform: uppercase;
         }
 
-        @media (max-width: 800px) {
-            .mision-vision-grid { flex-direction: column; }
-            .header-content { flex-direction: column; text-align: center; }
+        .caja p {
+            font-size: 16px;
+            text-align: justify;
+            color: #444;
+        }
+
+        @media (max-width: 850px) {
+            .grid-mv { flex-direction: column; }
+            .header { flex-direction: column-reverse; text-align: center; }
+            .header img { margin-bottom: 20px; }
         }
     </style>
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="header-content">
-            <div class="logo-container">
-                <img src="https://image2url.com/r2/default/images/1775065721197-84246861-cee3-42eb-9745-1f8f0fe8c54d.jpg" alt="UNIFÉ">
-            </div>
-            <div class="header-text">
-                <h1>UNIFÉ — Biblioteca Central</h1>
-                <p>Universidad Femenina del Sagrado Corazón</p>
-            </div>
+    <header class="header">
+        <div>
+            <p class="universidad">Universidad Femenina del Sagrado Corazón</p>
+            <h1 class="biblioteca">Biblioteca Central UNIFÉ</h1>
         </div>
+        <img src="https://image2url.com/r2/default/images/1775065721197-84246861-cee3-42eb-9745-1f8f0fe8c54d.jpg" alt="Logo UNIFÉ">
     </header>
 
-    <div class="alerta-bar">
-        <a href="#" class="btn-alerta">Alerta de Revistas Digitales UNIFÉ</a>
+    <hr>
+
+    <div class="descripcion">
+        La Biblioteca Central se constituye como una unidad fundamental de apoyo a la gestión del conocimiento, garantizando el acceso a recursos bibliográficos de alto valor científico para fortalecer los procesos de enseñanza e investigación.
     </div>
 
-    <main class="contenido-principal">
-        <div class="mision-vision-grid">
-            <div class="caja-info">
-                <h2>Misión</h2>
-                <p>Gestionar y difundir recursos de información especializados mediante servicios bibliotecarios de calidad, con el fin de potenciar el desarrollo académico y la producción intelectual institucional.</p>
-            </div>
-            <div class="caja-info">
-                <h2>Visión</h2>
-                <p>Consolidarnos como un referente en la gestión de información mediante la integración de tecnologías innovadoras, facilitando el aprendizaje autónomo y el éxito académico dinámico.</p>
-            </div>
+    <div class="grid-mv">
+        <div class="caja">
+            <h2>Misión</h2>
+            <p>Gestionar y difundir recursos de información especializados mediante servicios bibliotecarios de calidad, con el fin de potenciar el desarrollo académico y la producción intelectual de las estudiantes y docentes, alineándonos con los objetivos estratégicos de nuestra institución.</p>
         </div>
-    </main>
+        <div class="caja">
+            <h2>Visión</h2>
+            <p>Consolidarnos como un referente en la gestión de información mediante la integración de tecnologías innovadoras y sistemas bibliográficos avanzados, facilitando el aprendizaje autónomo y el éxito académico en un entorno global dinámico.</p>
+        </div>
+    </div>
 
 </body>
 </html>
+
+
 
