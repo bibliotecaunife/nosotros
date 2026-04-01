@@ -8,52 +8,55 @@
         
         body {
             font-family: Arial, sans-serif;
-            padding: 20px 5%;
             background-color: #fff;
             color: #333;
             line-height: 1.6;
         }
 
-    /* --- CABECERA CORREGIDA --- */
+        /* --- CABECERA: FONDO VERDE LOGO Y LETRAS BLANCAS --- */
         .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 100%; /* Para que el fondo llene todo el ancho */
-            margin: 0 auto 10px auto;
-            
-            /* Color de fondo igual al logo y letras en blanco */
-            background-color: #00bc62; /* Este es el verde brillante del logo de la imagen */
-            color: #ffffff;            /* Letras en blanco para todo el encabezado */
-            padding: 20px 5%;          /* Espacio interno */
+            max-width: 100%; 
+            margin: 0; 
+            background-color: #00bc62; /* Verde exacto del logo */
+            color: #ffffff !important; /* Forzamos blanco */
+            padding: 20px 5%;          
         }
+
         .universidad {
-            color: #008f4c;
             font-size: 15px;
             font-weight: bold;
             text-transform: uppercase;
+            color: #ffffff !important; /* Blanco obligatorio */
         }
 
         .biblioteca {
-            color: #005c32;
             font-size: 32px;
             font-weight: 800;
+            color: #ffffff !important; /* Blanco obligatorio */
         }
 
         .header img {
             height: 75px;
             width: auto;
+            display: block;
         }
 
-        /* LÍNEA DIVISORIA: Un punto más de grosor (2px) */
+        /* LÍNEA DIVISORIA */
         hr {
             border: 0;
             border-top: 2px solid #eee; 
             max-width: 1100px;
-            margin: 0 auto 45px auto;
+            margin: 45px auto;
         }
 
-        /* DESCRIPCIÓN */
+        /* CUERPO */
+        .contenedor {
+            padding: 20px 5% 60px 5%;
+        }
+
         .descripcion {
             text-align: center;
             color: #008f4c;
@@ -64,7 +67,6 @@
             font-weight: 500;
         }
 
-        /* CUADROS MISIÓN Y VISIÓN */
         .grid-mv {
             display: flex;
             gap: 30px;
@@ -110,25 +112,26 @@
         <img src="https://image2url.com/r2/default/images/1775065721197-84246861-cee3-42eb-9745-1f8f0fe8c54d.jpg" alt="Logo UNIFÉ">
     </header>
 
-    <hr>
+    <div class="contenedor">
+        <hr>
 
-    <div class="descripcion">
-        La Biblioteca Central se constituye como una unidad fundamental de apoyo a la gestión del conocimiento, garantizando el acceso a recursos bibliográficos de alto valor científico para fortalecer los procesos de enseñanza e investigación.
-    </div>
-
-    <div class="grid-mv">
-        <div class="caja">
-            <h2>Misión</h2>
-            <p>Gestionar y difundir recursos de información especializados mediante servicios bibliotecarios de calidad, con el fin de potenciar el desarrollo académico y la producción intelectual de las estudiantes y docentes, alineándonos con los objetivos estratégicos de nuestra institución.</p>
+        <div class="descripcion">
+            La Biblioteca Central se constituye como una unidad fundamental de apoyo a la gestión del conocimiento, garantizando el acceso a recursos bibliográficos de alto valor científico para fortalecer los procesos de enseñanza e investigación.
         </div>
-        <div class="caja">
-            <h2>Visión</h2>
-            <p>Consolidarnos como un referente en la gestión de información mediante la integración de tecnologías innovadoras y sistemas bibliográficos avanzados, facilitando el aprendizaje autónomo y el éxito académico en un entorno global dinámico.</p>
+
+        <div class="grid-mv">
+            <div class="caja">
+                <h2>Misión</h2>
+                <p>Gestionar y difundir recursos de información especializados mediante servicios bibliotecarios de calidad, con el fin de potenciar el desarrollo académico y la producción intelectual de las estudiantes y docentes, alineándonos con los objetivos estratégicos de nuestra institución.</p>
+            </div>
+            <div class="caja">
+                <h2>Visión</h2>
+                <p>Consolidarnos como un referente en la gestión de información mediante la integración de tecnologías innovadoras y sistemas bibliográficos avanzados, facilitando el aprendizaje autónomo y el éxito académico en un entorno global dinámico.</p>
+            </div>
         </div>
     </div>
 
 </body>
 </html>
-
 
 
