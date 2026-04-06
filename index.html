@@ -3,94 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Central UNIFÉ</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
             font-family: Arial, sans-serif;
+            padding: 20px 5%;
             background-color: #fff;
             color: #333;
             line-height: 1.6;
         }
 
-        /* --- CABECERA: COLOR AJUSTADO AL FONDO DEL LOGO --- */
+        /* ENCABEZADO */
         .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 100%; 
-            margin: 0; 
-            background-color: #00b154; /* Este verde coincide con el cuadro del logo */
-            color: #ffffff !important; 
-            padding: 15px 5%;          
+            max-width: 1100px;
+            margin: 0 auto 10px auto;
         }
 
         .universidad {
-            font-size: 14px;
+            color: #008f4c;
+            font-size: 15px;
             font-weight: bold;
             text-transform: uppercase;
-            color: #ffffff !important;
         }
 
         .biblioteca {
-            font-size: 30px;
+            color: #005c32;
+            font-size: 32px;
             font-weight: 800;
-            color: #ffffff !important;
         }
 
         .header img {
-            height: 70px;
+            height: 75px;
             width: auto;
-            display: block;
         }
 
-        /* --- CUERPO --- */
-        .contenedor {
-            padding: 25px 5% 60px 5%; 
+        /* LÍNEA DIVISORIA */
+        hr {
+            border: 0;
+            border-top: 2px solid #eee; 
+            max-width: 1100px;
+            margin: 0 auto 45px auto;
         }
 
+        /* DESCRIPCIÓN */
         .descripcion {
             text-align: center;
             color: #008f4c;
             font-style: italic;
-            font-size: 19px;
+            font-size: 20px;
             max-width: 900px;
-            margin: 0 auto 40px auto; 
+            margin: 0 auto 55px auto;
             font-weight: 500;
         }
 
+        /* CUADROS MISIÓN Y VISIÓN (Grid de 2 columnas) */
         .grid-mv {
             display: flex;
-            gap: 25px;
+            gap: 30px;
             max-width: 1100px;
             margin: 0 auto;
         }
 
         .caja {
-            background-color: #f9fdfb;
-            padding: 30px;
-            border-left: 8px solid #008f4c;
-            border-radius: 5px;
+            /* --- CAMBIO SOLICITADO: Color de fondo más intenso (verde menta) --- */
+            background-color: #e6f7ef; 
+            
+            padding: 35px;
+            border-left: 8px solid #008f4c; /* Mantiene la barra verde gruesa a la izquierda */
+            border-radius: 10px; /* Bordes un poco más redondeados como la imagen 2 */
             flex: 1;
         }
 
         .caja h2 {
-            color: #005c32;
-            font-size: 24px;
-            margin-bottom: 15px;
+            color: #005c32; /* El color de letra se mantiene */
+            font-size: 25px;
+            margin-bottom: 18px;
             text-transform: uppercase;
         }
 
         .caja p {
             font-size: 16px;
             text-align: justify;
-            color: #444;
+            color: #444; /* El color de letra se mantiene */
         }
 
         @media (max-width: 850px) {
             .grid-mv { flex-direction: column; }
             .header { flex-direction: column-reverse; text-align: center; }
-            .header img { margin-bottom: 15px; }
+            .header img { margin-bottom: 20px; }
         }
     </style>
 </head>
@@ -104,22 +109,25 @@
         <img src="https://image2url.com/r2/default/images/1775065721197-84246861-cee3-42eb-9745-1f8f0fe8c54d.jpg" alt="Logo UNIFÉ">
     </header>
 
-    <div class="contenedor">
-        <div class="descripcion">
-            La Biblioteca Central se constituye como una unidad fundamental de apoyo a la gestión del conocimiento, garantizando el acceso a recursos bibliográficos de alto valor científico para fortalecer los procesos de enseñanza e investigación.
-        </div>
+    <hr>
 
-        <div class="grid-mv">
-            <div class="caja">
-                <h2>Misión</h2>
-                <p>Gestionar y difundir recursos de información especializados mediante servicios bibliotecarios de calidad, con el fin de potenciar el desarrollo académico y la producción intelectual de las estudiantes y docentes, alineándonos con los objetivos estratégicos de nuestra institución.</p>
-            </div>
-            <div class="caja">
-                <h2>Visión</h2>
-                <p>Consolidarnos como un referente en la gestión de información mediante la integración de tecnologías innovadoras y sistemas bibliográficos avanzados, facilitando el aprendizaje autónomo y el éxito académico en un entorno global dinámico.</p>
-            </div>
+    <div class="descripcion">
+        La Biblioteca Central se constituye como una unidad fundamental de apoyo a la gestión del conocimiento, garantizando el acceso a recursos bibliográficos de alto valor científico para fortalecer los procesos de enseñanza e investigación.
+    </div>
+
+    <div class="grid-mv">
+        <div class="caja">
+            <h2>Misión</h2>
+            <p>Gestionar y difundir recursos de información especializados mediante servicios bibliotecarios de calidad, con el fin de potenciar el desarrollo académico y la producción intelectual de las estudiantes y docentes, alineándonos con los objetivos estratégicos de nuestra institución.</p>
+        </div>
+        <div class="caja">
+            <h2>Visión</h2>
+            <p>Consolidarnos como un referente en la gestión de información mediante la integración de tecnologías innovadoras y sistemas bibliográficos avanzados, facilitando el aprendizaje autónomo y el éxito académico en un entorno global dinámico.</p>
         </div>
     </div>
 
 </body>
 </html>
+
+
+
